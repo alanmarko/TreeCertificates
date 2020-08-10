@@ -35,9 +35,11 @@ As the application uses the earth engine it is necessary to first create an acco
 and also register at 
 * https://earthengine.google.com/signup/. 
 
+It should take less then 24 hours to receive the authorisation.
 Inside of the develepers console you should create a new Earth Engine API and download client_secrets.json file using the download button as described here:
 * https://stackoverflow.com/questions/40136699/using-google-api-for-python-where-do-i-get-the-client-secrets-json-file-from
-Replace the exisiting client_secrets.json file inside of TreeCertificates with the newly created one.
+
+Finally replace the exisiting client_secrets.json file inside of TreeCertificates with the newly created one.
 
 ### Step 3.
 In order to upload data to Google drive, the application asks for a file id. It can be any file from your google drive account. You can just select the file and copy the id from the url.
