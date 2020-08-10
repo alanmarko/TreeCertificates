@@ -16,24 +16,34 @@ it in case that the amount of carbon stored has changed(for example because some
 
 ## Installing
 ### Step 0.
-In order to run the application, you need to have installed Anaconda3 terminal with python 3.7. 
+In order to run the application, you need to have installed Anaconda3 terminal with python 3.7 on a Windows device.
 
 ### Step 1.
 Recreate the enviroment used by:
 ```
 conda env create -f environment.yml
 ```
+Activate using
+```
+conda activate gdal_test
+```
 
 ### Step 2.
-As the application uses the earth engine it is necessary to first create an account at console.gooogle.developers and 
-replace client_secrets.json file as described in 
+As the application uses the earth engine it is necessary to first create an account at https://console.developers.google.com/ and also register at https://earthengine.google.com/signup/. 
+Inside of the develepers console you should create a new Earth Engine API and download client_secrets.json file using the download button as described here:
 * https://stackoverflow.com/questions/40136699/using-google-api-for-python-where-do-i-get-the-client-secrets-json-file-from.
+Replace the exisiting client_secrets.json file inside of TreeCertificates with the newly created one.
 
 ### Step 3.
-In order to upload data to Google drive, the application asks for a file id. It can be any file from your google drive account.
+In order to upload data to Google drive, the application asks for a file id. It can be any file from your google drive account. You can just select the file and copy the id from the url.
 
 ### Step 4.
+You nee to download AVITABILE map from 
+*http://lucid.wur.nl/storage/downloads/high-carbon-ecosystems/Avitabile_AGB_Map.zip
+and put Avitabile_AGB_Map.tif file to into TreeCertificates folder.
+
+### Step 5.
 You can then run the application using:
 ```
-python Example.py
+python CertificationDemo.py
 ```
