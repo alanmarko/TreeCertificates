@@ -6,7 +6,7 @@ and calculating requested properties of selected forest such as the total amount
 
 In order to log-in to the Google Earth Engine it is necessary to create an account at console.developers.google and change client_secrets.json file
 
-In order to see an example usage, please see Example.py
+In order to see an example usage, please see CertificationDemo.py
 """
 
 import datetime
@@ -17,6 +17,7 @@ from pydrive.drive import GoogleDrive
 from PIL import Image
 from osgeo import gdal
 import numpy as np
+import datetime
 
 import json
 import time
@@ -157,7 +158,7 @@ class CertificationInterface:
             print()
 
         total_carbon=self.calculateCarbon(file_name,bitmask,x1,y1)
-        return (bitmask,total_carbon,x1,y1)
+        return (bitmask,total_carbon,x1,y1,datetime.datetime.now())
 
     def calculateCarbon(self,file_name,bitmask,x1,y1,x2,y2,width,height):
         imLoss = Image.open(file_name + "loss" + '.png')

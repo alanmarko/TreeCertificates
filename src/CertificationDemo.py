@@ -1,7 +1,7 @@
 """
-Example.py
+CertificationDemo.py
 
-Example.py shows example usage of classes such as CertificationInterface, CertificateMaker and CertificateIndexer in an application
+CertificationDemo.py shows example usage of classes such as CertificationInterface, CertificateMaker and CertificateIndexer in an application
 that allows user to input area of a forest, downloads data from the Hansen dataset, calculates the amount of stored carbon and
 also creates a new certificate if the input was valid. It is possible to later modify or recalculate the certificate.
 """
