@@ -31,8 +31,10 @@ conda activate gdal_test
 ### Step 2.
 As the application uses the earth engine it is necessary to first create an account at 
 * https://console.developers.google.com/ 
+
 and also register at 
 * https://earthengine.google.com/signup/. 
+
 Inside of the develepers console you should create a new Earth Engine API and download client_secrets.json file using the download button as described here:
 * https://stackoverflow.com/questions/40136699/using-google-api-for-python-where-do-i-get-the-client-secrets-json-file-from
 Replace the exisiting client_secrets.json file inside of TreeCertificates with the newly created one.
